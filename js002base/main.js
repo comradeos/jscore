@@ -69,3 +69,28 @@ let sumArrowFunc = (a, b) => {
 };
 
 print(sumArrowFunc(2,13));
+
+// LOOPS
+
+for (let i = 0; i <= 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+
+    print(i);
+
+    if (i == 7) {
+        break;
+    }
+}
+
+for (let i = 0; i < names.length; i++) {
+    print(names[i]);
+}
+
+
+let a = 10;
+while(a > 7) {
+    print(a);
+    a--;
+}
