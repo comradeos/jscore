@@ -1,17 +1,17 @@
-function print(variable) {
-    document.write(variable + "<br>");
+function print(var_name) {
+    document.write(var_name + "<br>");
 }
 
 
 // VARIABLES
-var message; // a-z, A-Z, 0-9, $, _
+let message; // a-z, A-Z, 0-9, $, _
 print(message);
 
-var myMessage;
+let myMessage;
 myMessage = "Message content";
 print(myMessage);
 
-var myNumber = 23.123;
+let myNumber = 23.123;
 print(myNumber);
 
 myObject = {
@@ -38,3 +38,34 @@ print(myNumber.toFixed(1));
 
 print("50" + myNumber);
 print(parseInt("50") + myNumber);
+
+
+// STRINGS
+let myString = "Hello, world";
+print(myString.toLowerCase());
+print(myString.toUpperCase());
+
+// ARRAYS
+let names = ["Maria", "Bob",];
+print(names[0]);
+print(names[0].toLowerCase());
+print(names[0].toUpperCase());
+
+names.push("Another"); // add new element
+print(names);
+
+
+if (10 < 20) {
+    print(true);
+};
+
+names.forEach(name => {
+    print(name);
+});
+
+// ARROW FUNCTIONS
+let sumArrowFunc = (a, b) => {
+   print(a + b);
+};
+
+print(sumArrowFunc(2,13));
