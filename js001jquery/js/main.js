@@ -1,10 +1,10 @@
-$(function(){
-   $(':submit').click(function(e) {
-      $('.text2').attr('disabled','disabled');
-      e.preventDefault();
-   });
-   $(':reset').click(function(e) {
-      $('.text2').removeAttr('disabled');
-      e.preventDefault();
-   });
-});
+jQuery('');
+$('');
+
+$('#element_id');
+$('.element_class');
+$('a');
+
+$('nav menu li');
+$('.elm_class > div');
+$('img + h4');
