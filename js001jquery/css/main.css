@@ -188,18 +188,28 @@ body .icons div {
 
 /* -------------------------------------------------------------------------------------- */
 
+
+/* все img после которых h4 */
 img + h4 {
    border: 1px solid red;
 }
 
+/* все img с аттрибутом height="200" */
 img[height="200"] {
    border: 3px solid blue;
 }
 
+/* аттрибут src начинается с img/*/
 img[src^="img/"] {
    border: 5px solid green;
 }
 
+/* аттрибут src заканчивается на .png */
 img[src$=".png"] {
-   border: 2px solid rgb(128, 0, 100);
+   border: 2px solid purple;
+}
+
+/* аттрибут src содержит символ # */
+a[href*="#"] {
+   border: 2px solid turquoise;
 }
