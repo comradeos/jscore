@@ -199,3 +199,7 @@ img[height="200"] {
 img[src^="img/"] {
    border: 5px solid green;
 }
+
+img[src$=".png"] {
+   border: 2px solid rgb(128, 0, 100);
+}
