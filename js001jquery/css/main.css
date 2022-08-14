@@ -213,3 +213,7 @@ img[src$=".png"] {
 a[href*="#"] {
    border: 2px solid turquoise;
 }
+
+menu li:nth-child(even) {
+  border: 1px solid red;
+}
