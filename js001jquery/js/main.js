@@ -41,4 +41,5 @@ $(document).ready(function(){
     console.log(tagP.text());
 
     tagP.hide(); // скрыть тег р
+    tagP.show(3000); // показать тег р (показать с анимацией за 2 секунды)
 });
