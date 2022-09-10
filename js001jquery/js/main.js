@@ -34,6 +34,11 @@ $('div:visibility') // выбрать все div которые видимые
 
 $(document).ready(function(){
     // весь код
-    var tagP = $('.mainText p').text("aaaaaaa");
-    alert(tagP);
+    var tagP = $('.mainText p'); // получить элемент
+    console.log(tagP.text());
+
+    tagP.text("Новый текст "); // установить новый текст
+    console.log(tagP.text());
+
+    tagP.hide(); // скрыть тег р
 });
