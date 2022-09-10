@@ -53,5 +53,11 @@ $(document).ready(function(){
 
 
 $(function(){
-    let element = $('.icon div');
+    let element = $('.icons > div');
+    element.hide(5000);
+
+    let block = $('.mainText');
+    console.log(block.width());
+    block.width(500);
+    console.log(block.width());
 });
