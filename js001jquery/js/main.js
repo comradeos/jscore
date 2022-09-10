@@ -56,8 +56,20 @@ $(function(){
     let element = $('.icons > div');
     element.hide(5000);
 
-    let block = $('.mainText');
+    let block = $('.mainText h2');
+    console.log(block.width()); // вывести ширину
+    block.width(100); // задать ширину
     console.log(block.width());
-    block.width(500);
-    console.log(block.width());
+
+
+    function widthAndHeight(element) {
+        let className = "." + element;
+        let object = $(className);
+        let w = object.width();
+        let h = object.height();
+        $('.mainText p').text("ширина " + w +  " высота " + h);
+    }
+    widthAndHeight('mainText');
+
+
 });
