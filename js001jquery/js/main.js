@@ -1,5 +1,4 @@
 /*
-
 jQuery('');
 $('');
 
@@ -28,10 +27,11 @@ $('li:last') // выбрать последний элемент li
 
 $('div:hidden') // выбрать все div которые скрыты
 $('div:visibility') // выбрать все div которые видимые
-
 */
 
 
+
+/*
 $(document).ready(function(){
     // весь код
     var tagP = $('.mainText p'); // получить элемент
@@ -48,4 +48,10 @@ $(document).ready(function(){
     
     // пример использования цепных функций
     tagP.hide(2000).text("Измененный").show(2000)
+});
+*/
+
+
+$(function(){
+    let element = $('.icon div');
 });
