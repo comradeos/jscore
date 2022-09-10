@@ -56,6 +56,7 @@ $(function(){
     let element = $('.icons > div');
     element.hide(5000);
 
+    
     let block = $('.mainText h2');
     console.log(block.width()); // вывести ширину
     block.width(100); // задать ширину
