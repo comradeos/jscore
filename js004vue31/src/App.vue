@@ -1,14 +1,20 @@
 <template>
 
-    <form>
+    <form @submit.prevent>
         <input
             v-bind:value="title"
-            @input="inputTitle"
+            @input="title = $event.target.value"
             type="text"
             placeholder="Описание"
         />
 
-        <input v-bind:value="body" type="text" placeholder="Назване"/>
+        <input
+            v-bind:value="body"
+            @input="body = $event.target.value"
+            type="text"
+            placeholder="Назване"
+        />
+
         <button @click="addPost">Создать</button>
     </form>
 
@@ -34,11 +40,13 @@
         },
         methods: {
             addPost() {
-
+                const newPost = {
+                    id: Date.now(),
+                    title: this.title,
+                    body: this.body,
+                }
+                this.posts.push(newPost);
             },
-            inputTitle(event) {
-                console.log(event.target.value);
-            }
         }
     }
 </script>
@@ -54,5 +62,4 @@
         border: 2px solid teal;
         margin-top: 15px;
     }
-
 </style>
