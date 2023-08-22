@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <h1>Hello Vue</h1>
+
+    <div id="app">
+        <div v-if="showBooks === true">
+            <p> {{title}} | {{author}} {{age}} years</p>
+            <button v-on:click="age++">Increase age</button>
+            <button v-on:click="age--">Decrease age</button>
+            <div @click="changeTitle('MyVALUE title!')">Change title</div><br>
+        </div>
+
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks === false">Show books</span>
+            <span v-else>Hide books</span>
+        </button>
+
+        <div v-show="showBooks === true">Currently showing books....</div>
+        
+        <hr>
+
+    </div>
+
+    <script src="00_index.js"></script>
+</body>
+</html>
