@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <style>
+        .item {
+            margin: 10px;
+            background: #dddddd;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="app">
+
+        <div v-for="book in books" class="item">{{ book.title }} - {{ book.author }}</div>
+
+        <button @click="helloFromMethod">Click me</button>
+    </div>
+
+    <script src="02_outputting_lists.js"></script>
+</body> 
+</html>

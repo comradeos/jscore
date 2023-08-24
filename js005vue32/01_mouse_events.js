@@ -31,7 +31,4 @@ const app = Vue.createApp({
 
 app.mount("#app");
 
-
-
 // https://www.youtube.com/watch?v=CYPZBK8zUik&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1&index=3
-// 10 51 

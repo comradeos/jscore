@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+
+    <div id="app">
+        <a v-bind:href="url">Some dynamic link | ok</a><br>
+        <a :href="url">Some dynamic link | alt ok</a><br>
+        <a href="url">Some dynamic link | not ok</a><br>
+        <hr>
+
+        <ul>
+            <li v-for="company in companies">
+                <img v-bind:src="company.logo" v-bind:alt="company.url">
+                <a v-bind:href="company.url">{{ company.url }}</a><br>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="03_attribute_bind.js"></script>
+</body> 
+</html>
