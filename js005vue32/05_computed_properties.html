@@ -25,8 +25,11 @@
     <div id="app">
         <div v-for="book in books" v-bind:class="{ fav: book.favorite == true }" @click="toggleFav(book)">{{ book.title }}</div>
         <!-- применяет к тегу класс fav все у кого  свойство book.favorite == true -->
+        <hr>
+        <h3>filtered: </h3>
+        <div v-for="book in filteredBooks" v-bind:class="{ fav: book.favorite == true }">{{ book.title }}</div>
     </div>
 
-    <script src="04_dynamic_classes.js"></script>
+    <script src="05_computed_properties.js"></script>
 </body> 
 </html>
