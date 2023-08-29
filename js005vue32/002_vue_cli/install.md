@@ -26,3 +26,10 @@ Vue CLI v5.0.8
 ? Save this as a preset for future projects? (y/N) n
 
 ---
+
+### Run server
+```
+npm run serve
+```
+
+[16:05](https://www.youtube.com/watch?v=GWRvrSqnFbM&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1&index=5)
