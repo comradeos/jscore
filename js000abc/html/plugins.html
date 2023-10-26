@@ -20,10 +20,13 @@
         };
     }(jQuery));
 
+    (function($){
+        $.fn.hey = () => {
+            console.log("hey");
+        };
+    }(jQuery));
 
-    $('a').green();
-
-
+    $("a").green().hey();
 
 </script>
 
