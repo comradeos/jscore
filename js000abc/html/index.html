@@ -7,7 +7,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <h1>Test</h1>
+    <div class="popup_container">
+        <div class="buttons">
+            <button id="popup_1">popup #1</button>
+            <button id="popup_2">popup #2</button>
+            <button id="popup_3">popup #3</button>
+        </div>
+
+        <div id="new">
+        </div>
+
+    </div>
+
+
     <script src="scripts/general.js"></script>
+
+    <script>
+        $('#popup_1').on('click', () => {
+            let popup1 = new PopUp('get', 'YAPOPER1', 'qweqwe');
+            $('#new').html(popup1.content);
+        });
+
+        $('#popup_2').on('click', () => {
+            let popup1 = new PopUp('get', 'FFFFF', 'qweSS22qwe');
+            $('#new').html(popup1.content);
+        });
+
+        $('#popup_3').on('click', () => {
+            let popup1 = new PopUp('get', 'eqeq', '02');
+            $('#new').html(popup1.content);
+        });
+
+
+    </script>
 </body>
 </html>
