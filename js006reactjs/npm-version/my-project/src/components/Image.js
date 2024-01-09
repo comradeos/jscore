@@ -5,7 +5,7 @@ class Image extends React.Component {
 		return(
 			<div>
 				<br/>
-				<img src={this.props.image} width={this.props.width}/>
+				<img src={this.props.image} width={this.props.width+"px"}/>
 			</div>
 		);
 	}

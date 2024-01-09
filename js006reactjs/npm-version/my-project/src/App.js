@@ -10,7 +10,6 @@ class App extends React.Component {
 			helpText: "helpText default",
 			userData: "",
 		}
-
 		this.inputClick = this.inputClick.bind(this);
 	}
 
@@ -20,8 +19,6 @@ class App extends React.Component {
 		return (
 			<div>
 				<Header title="test"/>
-				<Header title="Моя шапка 1"/>
-				<Header title="Моя шапка 2"/>
 				<Header title={this.state.helpText}/>
 				
 				<h1>{ (false) ? "True" : "False" }</h1>
@@ -35,7 +32,7 @@ class App extends React.Component {
 					onChange={(event)=>{ this.setState({userData: event.target.value})}} 
 				/>
                 
-				<Image image={Logo} width={50}/>
+				<Image image={Logo} width={"20%"}/>
                 
 				<img src={Logo} width={25}/>
 			</div>
