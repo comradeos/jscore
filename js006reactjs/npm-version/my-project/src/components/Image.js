@@ -3,7 +3,10 @@ import React from "react";
 class Image extends React.Component {
 	render() {
 		return(
-			<img src={this.props.image}/>
+			<div>
+				<br/>
+				<img src={this.props.image} width={this.props.width}/>
+			</div>
 		);
 	}
 }
