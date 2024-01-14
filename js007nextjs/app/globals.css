@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:active, a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+header nav a {
+    margin-left: 20px;
+}
+
+header span {
+    font-size: 24px;
+    font-weight: 900;
+    color: #5c500b;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+.post {
+    max-width: 500px;
+    margin: 10px 0 0 0;
+    background: #d5ecff;
+    padding: 10px;
+}
+
+.post p {
+    margin: 10px 0;
+}
