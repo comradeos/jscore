@@ -52,3 +52,20 @@ app.on('activate', () => {
     <p>This is a simple Electron application.</p>
 </body>
 </html>
+
+
+
+Обновите package.json, добавив скрипт для запуска Electron:
+
+
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
+}
