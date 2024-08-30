@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+</head>
+<body>
+    <h1 id="loading">Loading</h1>
+
+    <style>
+        #loading {
+            font-size: 74px;
+            text-align: center;
+        }
+    </style>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('Document is ready');
+            animateDots();
+            setInterval(function() {
+                loadData();
+            }, 1000);
+        });
+
+        function animateDots() {
+            var loadingText = $('#loading');
+            var dots = 0;
+            var maxDots = 3;
+
+            setInterval(function() {
+                dots = (dots + 1) % (maxDots + 1);
+                var dotString = '.'.repeat(dots);
+                loadingText.text('Loading' + dotString);
+            }, 500);
+        }
+
+        function loadData() {
+            $.ajax({
+                // url: 'http://localhost:3000/',
+                url: 'http://localhost:3000/',
+                method: 'GET',
+                success: function(data) {
+                    console.log('Data loaded successfully');
+                    window.location.href = 'http://localhost:3000/';
+                },
+                error: function(error) {
+                    console.error('Error loading data:', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
