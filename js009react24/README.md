@@ -52,4 +52,4 @@ the [Create React App documentation](https://facebook.github.io/create-react-app
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-https://youtu.be/kz23xxukY5s?feature=shared&t=4600
+https://youtu.be/kz23xxukY5s?feature=shared&t=7353
