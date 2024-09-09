@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import WayToTeach from './components/WayToTeach';
 import Button from './components/Button';
 import {useState} from "react";
+import Another from './components/Another';
 
 import './App.css';
 
@@ -43,10 +44,11 @@ function App() {
                 ))}
             </ul>
 
+            <Another/>
+
             <Button click={() => {
                 handleClick(data, 'title');
             }}>title</Button>
-
 
             <Button click={() => {
                 handleClick(data, 'description');
