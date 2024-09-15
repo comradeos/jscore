@@ -1,6 +1,7 @@
+import {useState} from "react";
 import './Content.css';
 import Menu from "./Menu";
-import {useState} from "react";
+import Contact from "../pages/Contact";
 
 function Content() {
     const [active, setActive] = useState('home');
@@ -13,6 +14,7 @@ function Content() {
                 <div>
                     {/* Вы можете использовать значение active здесь */}
                     <p>Current active: {active}</p>
+                    {active === 'contact' && <Contact />}
                 </div>
             </div>
         </>
