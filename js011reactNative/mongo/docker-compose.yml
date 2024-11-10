@@ -1,0 +1,14 @@
+version: '3.1' # Версия формата файла docker-compose
+
+services:
+  mongo:
+    image: mongo # Используемый образ Docker для MongoDB
+    container_name: mongo # Имя контейнера
+    ports:
+      - "27019:27017" # Проброс порта 27019 контейнера на порт 27017 хоста
+    volumes:
+      - ./data:/data/db # Подключение тома для хранения данных MongoDB
+
+volumes:
+  mongo-data:
+    driver: local # Использование локального драйвера для тома
