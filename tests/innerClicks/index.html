@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="outter">
+        <div id="val1"></div>
+        <button id="b1">show inner</button>
+        <div class="inner" style="display:none;">INNER</div>
+    </div>
+
+    <style>
+        .outter {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            margin-top: 50px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            let button = $('#b1');
+            let outter = $('.outter');
+            let inner = $('.inner');
+            let value = $('#val1');
+            
+            button.on('click', function() {
+                event.stopPropagation(); // Останавливаем распространение события
+                console.log('Button clicked');
+                inner.show();
+            });
+
+            inner.on('click', function(event) {
+                console.log('Inner clicked');
+                value.text('inner clicked');
+                event.stopPropagation(); // Останавливаем распространение события
+            });
+
+            outter.on('click', function() {
+                console.log('Outter clicked');
+                inner.hide();
+            });
+        });
+    </script>
+</body>
+</html>
